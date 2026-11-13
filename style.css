@@ -513,3 +513,61 @@ section {
     font-size: 15px;
     vertical-align: middle;
 }
+
+/* ANIMAÇÕES DO PORTFÓLIO */
+
+/* Entrada suave da apresentação */
+.apresentacao {
+    animation: aparecer 1s ease forwards;
+}
+
+/* Animação da foto */
+.foto {
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+/* Animação dos títulos */
+.sobre-conteudo,
+.habilidades-conteudo,
+.projetos-conteudo,
+.formacao-conteudo,
+.contato-conteudo {
+    animation: aparecer 1.2s ease;
+}
+
+/* Movimento de entrada */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Movimento suave da foto */
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Respeita usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    .apresentacao,
+    .foto,
+    .sobre-conteudo,
+    .habilidades-conteudo,
+    .projetos-conteudo,
+    .formacao-conteudo,
+    .contato-conteudo {
+        animation: none;
+    }
+}
