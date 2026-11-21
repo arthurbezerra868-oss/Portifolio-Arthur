@@ -22,19 +22,6 @@ O portfólio foi desenvolvido como parte da minha jornada de aprendizado em Enge
 - Alternância entre tema claro e escuro
 - Layout responsivo para diferentes dispositivos
 
-## 📂 Estrutura do projeto
-
-```text
-Portifolio-Arthur/
-├── index.html
-├── README.md
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-└── img/
-    └── minha-foto.jpg
-```
 
 ## 🌐 Acesse o portfólio
 
@@ -54,6 +41,4 @@ Portifolio-Arthur/
 - [GitHub](https://github.com/arthurbezerra868-oss)
 - [LinkedIn](https://www.linkedin.com/in/arthur-lima-b80b7542b/)
 
----
 
-*Projeto desenvolvido com dedicação durante minha formação em Engenharia de Software.*
