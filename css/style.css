@@ -560,15 +560,186 @@ section {
     }
 }
 
-/* Respeita usuários que preferem menos movimento */
-@media (prefers-reduced-motion: reduce) {
-    .apresentacao,
-    .foto,
-    .sobre-conteudo,
-    .habilidades-conteudo,
-    .projetos-conteudo,
-    .formacao-conteudo,
-    .contato-conteudo {
-        animation: none;
+/* ==========================================
+   BOTÃO DE ALTERNÂNCIA DE TEMA
+   MODO CLARO / MODO ESCURO
+========================================== */
+
+#botaoTema {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 50px;
+
+    background-color: #222;
+    color: #fff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.20);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+#botaoTema:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 20px #a855f7;
+    border-color: #a855f7;
+}
+
+/* ÍCONE DO BOTÃO */
+
+#iconeTema {
+    font-size: 18px;
+    line-height: 1;
+}
+
+/* TEXTO DO BOTÃO */
+
+#textoTema {
+    white-space: nowrap;
+}
+
+/* BOTÃO NO TEMA ESCURO - PADRÃO */
+body:not(.claro) #botaoTema {
+    background-color: #222;
+    color: #fff;
+    border-color: #444;
+}
+
+/* BOTÃO NO TEMA CLARO */
+body.claro #botaoTema {
+    background-color: #ffffff;
+    color: #222;
+    border-color: #ccc;
+}
+
+/* EFEITO DE CLIQUE */
+
+#botaoTema:active {
+    transform: scale(0.95);
+}
+
+/* ACESSIBILIDADE: FOCO PELO TECLADO */
+
+#botaoTema:focus-visible {
+    outline: 3px solid #ff69b4;
+    outline-offset: 4px;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    #botaoTema {
+        top: 15px;
+        right: 15px;
+
+        padding: 10px 14px;
+
+        font-size: 12px;
+        gap: 8px;
     }
+
+    #iconeTema {
+        font-size: 16px;
+    }
+}
+
+/* CELULARES COM TELAS MUITO PEQUENAS */
+
+@media (max-width: 380px) {
+
+    #botaoTema {
+        top: 10px;
+        right: 10px;
+
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+}
+/* ==========================================
+   MODO CLARO DO PORTFÓLIO
+========================================== */
+
+body.claro {
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+body.claro header {
+    background-color: #ffffff;
+}
+
+body.claro header nav a {
+    color: #444444;
+}
+
+body.claro #inicio,
+body.claro #habilidades,
+body.claro #formacao {
+    background-color: #f5f5f5;
+}
+
+body.claro #sobre,
+body.claro #projetos,
+body.claro #contato {
+    background-color: #ffffff;
+}
+
+body.claro .apresentacao p,
+body.claro .sobre-conteudo p,
+body.claro .habilidade p,
+body.claro .descricao,
+body.claro .projeto-info p,
+body.claro .formacao-card p,
+body.claro .contato-conteudo p {
+    color: #555555;
+}
+
+body.claro .habilidade,
+body.claro .projeto,
+body.claro .formacao-card {
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+body.claro .projeto-info h3,
+body.claro .formacao-card h3,
+body.claro .sobre-conteudo h2,
+body.claro .habilidades-conteudo h2,
+body.claro .projetos-conteudo h2,
+body.claro .formacao-conteudo h2,
+body.claro .contato-conteudo h2 {
+    color: #222222;
+}
+
+body.claro footer {
+    background-color: #ffffff;
+    border-top-color: #dddddd;
+}
+
+body.claro footer p {
+    color: #666666;
 }
