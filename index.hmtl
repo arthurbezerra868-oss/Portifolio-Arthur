@@ -42,7 +42,7 @@
                 <a href="#sobre">Conheça meu trabalho</a>
             </div>
 
-            <div class="foto">
+           <div class="foto">
                 <img src="minha-foto.jpg"
                 alt="Foto de Arthur Lima">
             </div>
@@ -248,3 +248,4 @@
 
 </body>
 </html>
+
