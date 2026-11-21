@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,21 +7,18 @@
 
     <title>Arthur Lima | Desenvolvedor</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Menu de navegação -->
     <header>
         <nav>
-            <a href="#inicio" class="inicio-link">
-                <span class="icone-casa">⌂</span> Início
-            </a>
-
-            <a href="#sobre">Sobre</a>
-            <a href="#habilidades">Habilidades</a>
+           <a href="#inicio" class="inicio-link">
+    <span class="icone-casa">⌂</span> Início
+</a> 
+            <a href="#sobre">Sobre</a> 
+            <a href="#habilidades">Habilidades</a> 
             <a href="#projetos">Projetos</a>
             <a href="#formacao">Formação</a>
             <a href="#contato">Contato</a>
@@ -28,11 +26,8 @@
     </header>
 
     <main>
-
-        <!-- Início -->
         <section id="inicio">
             <div class="apresentacao">
-
                 <p>OLÁ, MEU NOME É ARTHUR</p>
 
                 <h2>
@@ -45,19 +40,16 @@
                 </p>
 
                 <a href="#sobre">Conheça meu trabalho</a>
-
             </div>
 
-            <div class="foto">
-                <img src="img/minha-foto.jpg"
-                     alt="Foto de Arthur Lima">
+           <div class="foto">
+                <img src="minha-foto.jpg"
+                alt="Foto de Arthur Lima">
             </div>
         </section>
 
-        <!-- Sobre mim -->
         <section id="sobre">
             <div class="sobre-conteudo">
-
                 <p class="destaque">QUEM SOU EU</p>
 
                 <h2>Sobre mim</h2>
@@ -81,16 +73,13 @@
                     estágio para adquirir experiência e contribuir
                     com novos projetos.
                 </p>
-
             </div>
         </section>
 
-        <!-- Habilidades -->
         <section id="habilidades">
             <div class="habilidades-conteudo">
 
                 <p class="destaque">MINHAS TECNOLOGIAS</p>
-
                 <h2>Minhas Habilidades</h2>
 
                 <p class="descricao">
@@ -139,12 +128,10 @@
             </div>
         </section>
 
-        <!-- Projetos -->
         <section id="projetos">
             <div class="projetos-conteudo">
 
                 <p class="destaque">MEU TRABALHO</p>
-
                 <h2>Meus Projetos</h2>
 
                 <p class="descricao">
@@ -155,13 +142,11 @@
                 <div class="lista-projetos">
 
                     <div class="projeto">
-
                         <div class="projeto-imagem">
                             <span>OUTUBRO ROSA</span>
                         </div>
 
                         <div class="projeto-info">
-
                             <h3>Site Outubro Rosa</h3>
 
                             <p>
@@ -176,17 +161,14 @@
                             </div>
 
                             <a href="https://github.com/arthurbezerra868-oss/Site-Outubro-Rosa"
-                               target="_blank"
-                               rel="noopener noreferrer">
+                               target="_blank">
                                 Ver no GitHub
                             </a>
 
                             <a href="https://arthurbezerra868-oss.github.io/Site-Outubro-Rosa/"
-                               target="_blank"
-                               rel="noopener noreferrer">
+                               target="_blank">
                                 Acessar projeto
                             </a>
-
                         </div>
                     </div>
 
@@ -194,16 +176,13 @@
             </div>
         </section>
 
-        <!-- Formação -->
         <section id="formacao">
             <div class="formacao-conteudo">
 
                 <p class="destaque">MINHA JORNADA</p>
-
                 <h2>Formação Acadêmica</h2>
 
                 <div class="formacao-card">
-
                     <h3>Engenharia de Software</h3>
 
                     <p class="instituicao">
@@ -218,17 +197,15 @@
                     </p>
 
                     <span>Em andamento</span>
-
                 </div>
+
             </div>
         </section>
 
-        <!-- Contato -->
         <section id="contato">
             <div class="contato-conteudo">
 
                 <p class="destaque">VAMOS CONVERSAR?</p>
-
                 <h2>Entre em Contato</h2>
 
                 <p>
@@ -243,24 +220,22 @@
                     </a>
 
                     <a href="https://github.com/arthurbezerra868-oss"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                       target="_blank">
                         GitHub
                     </a>
 
                     <a href="https://www.linkedin.com/in/arthur-lima-b80b7542b/"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                       target="_blank">
                         LinkedIn
                     </a>
 
                 </div>
+
             </div>
         </section>
 
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <p>
             © <span id="ano"></span> Arthur Lima.
@@ -268,8 +243,14 @@
         </p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <!--Botão flutuante do tema-->
+    <button id="botaoTema" class="botao-tema" aria-label="Alternar tema">
+    <span id="iconeTema">🌙</span>
+    <span id="textoTema">Modo escuro</span>
+</button>
+    <!--JavaScript-->
+    <script src="script.js"></script>
 
 </body>
 </html>
+
