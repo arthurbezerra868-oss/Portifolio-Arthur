@@ -7,15 +7,55 @@
 
     <title>Arthur Lima | Desenvolvedor</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
         <nav>
+            <!-- LOGO ARTHUR LIMA -->
+    <a href="#inicio" class="logo" aria-label="Arthur Lima - Início">
+    <svg class="logo-svg" viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- A metálico -->
+        <path d="M8 88 L43 12 H70 L105 88 H78 L70 68 H43 L35 88 Z"
+              fill="url(#prataLogo)"/>
+
+        <!-- Interior do A -->
+        <path d="M48 49 H65 L56 29 Z"
+              fill="#0d0d12"/>
+
+        <!-- L azul: haste vertical e base horizontal -->
+        <path d="M91 12 H117 V65 H151 V88 H91 Z"
+              fill="url(#azulLogo)"/>
+
+        <!-- Detalhes tecnológicos -->
+        <path d="M12 93 H78"
+              stroke="#8b5cf6"
+              stroke-width="2"
+              opacity="0.7"/>
+
+      <defs>
+    <!-- Prata com toque roxo -->
+    <linearGradient id="prataLogo" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#F5F3FF"/>
+        <stop offset="45%" stop-color="#C4B5FD"/>
+        <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+
+    <!-- Roxo do portfólio -->
+    <linearGradient id="azulLogo" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#A78BFA"/>
+        <stop offset="50%" stop-color="#8B5CF6"/>
+        <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+</defs>
+
+    </svg>
+</a>
+
            <a href="#inicio" class="inicio-link">
-    <span class="icone-casa">⌂</span> Início
 </a> 
             <a href="#sobre">Sobre</a> 
             <a href="#habilidades">Habilidades</a> 
@@ -43,7 +83,7 @@
             </div>
 
            <div class="foto">
-                <img src="img/minha-foto.jpg"
+                <img src="minha-foto.jpg"
                 alt="Foto de Arthur Lima">
             </div>
         </section>
@@ -249,7 +289,7 @@
     <span id="textoTema">Modo escuro</span>
 </button>
     <!--JavaScript-->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
